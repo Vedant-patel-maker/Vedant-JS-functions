@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- program instruction -->
+    <button onclick="startProgram()">Start program</button>
+    <p id="instruction"></p>
+    
+    <!-- now taking inputs from the user -->
+
+    <input type="number" value="0" id="input1" onchange="firstNumberChange(this.value)">
+    <p>-</p>
+    <input type="number" value="0" id="input2" onchange="secongNumberChange(this.value)">
+    
+    <button onclick="calculateTheOutput()">=</button>
+
+ 
+<!-- java script starting here -->
+
+    <script>
+        // program instruction display using function call
+        function startProgram(){
+            document.getElementById("instruction").innerText="1.You have to enter the both inputs and then press calculate button for output.";
+        };
+
+        // declaring the two variables for two inputs with initial value is 0
+
+        let firstVariable = 0;
+        let secondVariable = 0;
+
+        // now calling below two functins using input
+
+        function firstNumberChange(value){
+
+            // now assinig a new value to the variable
+
+            firstVariable = Number(value);
+
+        };
+
+        function secongNumberChange(value){
+
+            // now assinig a new value to the variable
+
+            secondVariable = Number(value);
+
+        };
+
+        // last stage of calculation
+
+        function calculateTheOutput(){
+            const sub = firstVariable - secondVariable;
+            alert("This is final output :- " + sub);
+       
+        };
+
+
+    </script>
+</body>
+</html>
