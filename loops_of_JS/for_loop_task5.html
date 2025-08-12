@@ -1,0 +1,36 @@
+
+<!-- program for calculate factorial through for loop using javascript  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="factorial">Enter a number to find factorial :</label>
+    <input type="number" id="factorial" value="0" onchange="findFactorial(this.value)">
+    <p id="outputData"></p>
+
+    <script>
+        
+        function findFactorial(value){
+            let num = Number(value);
+            let answer = 1;  
+            for(let i = num; i>0; i--){
+                
+                answer = answer*i;
+                // console.log(answer);
+
+            }
+            
+            document.getElementById("outputData").innerText = answer;
+        
+        }
+
+
+
+    </script>
+</body>
+</html>

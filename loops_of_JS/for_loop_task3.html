@@ -1,0 +1,33 @@
+
+<!-- program for printing series of numbers using javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="sumOfAllNumbers">Enter a number for sum of all series :</label>
+    <input type="number" id="sumOfAllNumbers" onchange="sumNumbers(this.value)">
+    
+    <p id="displayData"></p>
+    <script>
+        function sumNumbers(value){
+
+            lastNumber = Number(value);
+            let total = 0;
+
+            for (let i=0; i<=lastNumber; i++){
+                
+                total += i;
+                console.log(total);
+            
+            }
+
+            document.getElementById("displayData").innerHTML = total;
+        }
+    </script>
+</body>
+</html>

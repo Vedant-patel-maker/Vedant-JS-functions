@@ -1,0 +1,34 @@
+
+<!-- program for printing series of numbers using javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="inputdata">Enter a number you want to display the data :</label>
+    <input type="number" value="0" id="inputdata" onchange="indata(this.value)">
+
+
+    <script>
+        // this function is print data on console according to input from users.
+
+        function indata(value){
+
+            dataLength = Number(value);
+
+            for (let i=0; i<=dataLength;){
+
+                console.log("i",i);
+                i++;
+
+            }
+
+        }
+
+    </script>
+</body>
+</html>

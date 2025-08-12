@@ -12,9 +12,11 @@
     
     <!-- now taking inputs from the user -->
 
-    <input type="number" value="0" id="input1" onchange="firstNumberChange(this.value)">
+    <label for="input1">First Number:</label>
+    <input type="number" value="0" id="input1" onchange="firstNumberChange(this.value)" placeholder="Enter first number" title="Enter first number">
     <p>/</p>
-    <input type="number" value="0" id="input2" onchange="secongNumberChange(this.value)">
+    <label for="input2">Second Number:</label>
+    <input type="number" value="0" id="input2" onchange="secongNumberChange(this.value)" placeholder="Enter second number" title="Enter second number">
     
     <button onclick="calculateTheOutput()">=</button>
 
